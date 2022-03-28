@@ -16,9 +16,19 @@ console.log(mondayWork())
 
 
 function wrapAdjective(msg = "*"){
+    const innerFunction = function(msg1 = "special"){
+        return `You are ${msg}${msg1}${msg}!`
+
+    }
+    return innerFunction;
+}
+
+/*
+function wrapAdjective(msg = "*"){
     const innerFunction = function(msg1 = "a hard worker"){
         return `You are ${msg}${msg1}${msg}!`
 
     }
     return innerFunction;
 }
+*/
